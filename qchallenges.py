@@ -59,6 +59,9 @@ def q2lvl1(qkd, life):
         return life - 1
         time.sleep(2)
         print("The trees start to clear, hills take their place.")
+        print("Another Toad stands at a quantum device ahead of you.")
+        time.sleep(2)
+        print("Hey Mario! You should create a new key, the old one doesn't work in the wastelands up ahead!") #Another QKD challenge, needs code
         time.sleep(2)
         print("
     time.sleep(1)
@@ -95,16 +98,14 @@ def q1lvl2(qkd, life):
         time.sleep(2)
         print("The world switches around you. The green grass disappears, leaving way for a desolate wasteland.")
         time.sleep(2)
-        print("Another Toad stands at a quantum device ahead of you.")
-        time.sleep(2)
-        print("Hey Mario! You should create a new key, the old one doesn't work in the wastelands!") #Another key
+        
     time.sleep(1)
     print('...')
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def q2lvl2(qkd, life):
     time.sleep(4)
-    print("A regular sized duck asks you: What is quantum teleportation?")
+    print("A regular sized duck stops you in you way. The duck asks you: What is quantum teleportation?")
     time.sleep(1)
     print("a. Communicating using entangled states and a classical information channel")
     time.sleep(1)
@@ -121,11 +122,11 @@ def q2lvl2(qkd, life):
     time.sleep(2)
     q1ans=input("What is your answer?")
     if q1ans == "a":
-        print("Correct! You continue")
+        print("Correct! The duck moves to the side, and you continue.")
         time.sleep(2)
-        print("The
+        print("
     else:
-        print("Wrong! You lose a life")
+        print("Wrong! You lose a life but you must keep moving...")
         return life - 1
     time.sleep(1)
     print('...')
@@ -151,7 +152,7 @@ def q1lvl3(qkd, life):
     if q1ans == "b":
         print("You continue")
     else:
-        print("Wrong! You lose a life")
+        print("Wrong! You lose a life but you must keep moving...")
         return life - 1
     time.sleep(1)
     print('...')
@@ -178,10 +179,28 @@ def q2vl3(qkd, life):
     if q1ans == "c":
         print("You continue")
     else:
-        print("Wrong! You lose a life")
+        print("Wrong! You lose a life but you must keep moving...")
         return life - 1
     time.sleep(1)
     print('...')
     os.system('cls' if os.name == 'nt' else 'clear')
+              
+#q2lvl4
+print("Oh the thunderstorm starts and in echoing invisible voices: What does pure quantum states mean?")
+print("a. correspond to vectors in a Hilbert space, while each observable quantity  is associated with a mathematical operator.")
+print("b. Particles made in clean room")
+print("c. vectors in a Euler space, associated with Laplace operator.")
+print("d. Particles fored after superposition.")
+if qkd == True: #if you get the hint
+    print("The princess says: vectors?...")
+elif qkd == False: 
+    print("The princess says: ..come on!!. ") #bowser hint
+q1ans=input("What is your answer?")
+if q1ans == "a":
+    print("You continue")
+else:
+        print("Wrong! You lose a life") 
+
+
     
     
