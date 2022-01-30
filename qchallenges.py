@@ -26,6 +26,8 @@ def q1lvl1(qkd, life):
     else:
         print("Wrong! You lose a life but you must keep moving...")
         return life - 1
+        time.sleep(2)
+        print("You continue. The path here is nice. Trees surround you, and the sun shines.")
     time.sleep(1)
     print('...')
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -55,6 +57,10 @@ def q2lvl1(qkd, life):
     else:
         print("Wrong! You lose a life but you must keep moving...")
         return life - 1
+        time.sleep(2)
+        print("The trees start to clear, hills take their place.")
+        time.sleep(2)
+        print("
     time.sleep(1)
     print('...')
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -82,8 +88,16 @@ def q1lvl2(qkd, life):
         time.sleep(2)
         print("
     else:
-        print("Wrong! You lose a life")
+        print("Wrong! You lose a life but you must keep moving...")
         return life - 1
+        time.sleep(2)
+        print("The huge duck takes flight, leaving way for you. You continue") 
+        time.sleep(2)
+        print("The world switches around you. The green grass disappears, leaving way for a desolate wasteland.")
+        time.sleep(2)
+        print("Another Toad stands at a quantum device ahead of you.")
+        time.sleep(2)
+        print("Hey Mario! You should create a new key, the old one doesn't work in the wastelands!") #Another key
     time.sleep(1)
     print('...')
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -94,20 +108,22 @@ def q2lvl2(qkd, life):
     time.sleep(1)
     print("a. Communicating using entangled states and a classical information channel")
     time.sleep(1)
-    print("b. ")
+    print("b. Being able to teleport to one of two places, not knowing which one of them you'll end up at.")
     time.sleep(1)
-    print("c. ")
+    print("c. Teleporting objects and states using a quantum computer")
     time.sleep(1)
-    print("d. ")
+    print("d. Communicating using classical bits.")
     time.sleep(1)
     if qkd == True: #if you get the hint
-        print("The princess says: ...")
+        print("The princess says: Classical bits has nothing to do with teleportation, right?")
     elif qkd == False: 
-        print("The princess says: ... ") #bowser hint
+        print("The princess says: Wow, teleportation ") #bowser hint
     time.sleep(2)
     q1ans=input("What is your answer?")
     if q1ans == "a":
-        print("You continue")
+        print("Correct! You continue")
+        time.sleep(2)
+        print("The
     else:
         print("Wrong! You lose a life")
         return life - 1
