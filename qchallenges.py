@@ -61,8 +61,10 @@ def q2lvl1(qkd, life):
     print("Another Toad stands at a quantum device ahead of you.")
     time.sleep(2)
     print("Hey Mario! You should create a new key, the old one doesn't work in the wastelands up ahead!") 
-        
-    #Another QKD challenge, needs code
+    time.sleep(2)    
+    print("Normally, you would need to choose some bits, but I've got you this time! Just tell me some basis and I'll see if they match the Princess' bits.")
+    
+    #Basis thing
 
     time.sleep(1)
     print('...')
@@ -135,7 +137,12 @@ def q2lvl2(qkd, life):
     time.sleep(3)
     print("After yet some time, you see another Toad, with yet another Quantum Computer.")
     time.sleep(2)
-    print("Hey Mario, the Toad says. You need to redo the key once more before you arrive at the castle.")  #Needs code again
+    print("Hey Mario, the Toad says. You need to redo the key once more before you arrive at the castle.")
+    time.sleep(2)
+    print("I've chosen some bits for you, you just choose the basis and I'll tell you the Princess' bits. 
+          
+    #bases.thing
+    
     time.sleep(1)
     print('...')
 
@@ -232,11 +239,13 @@ def q2lvl4(qkd, life):
     time.sleep(3)
     print("You have finally reached the gate.")
     time.sleep(3)
-    print("One last guradian awaits you.")
+    print("One last boss awaits you.")
     time.sleep(3)
-    print("A duck the size of small bird sits on the footsteps of the gate.")
+    print("Bowser")
     time.sleep(3)
-    print("'You have done well so far Mario', says the duck. 'But there is still one more question left for you to answer. Now tell me: Which of these alternatives are a step in the process of Quantum Key Distribution?")
+    print("You enter the castle, and brace yourself for one final challenge")
+    time.sleep(3)
+    print("'You have done well so far Mario', says Bowser. 'But there is still one more question left for you to answer. If you answer correctly, I will release Peach. Now tell me: Which of these alternatives are a step in the process of Quantum Key Distribution?")
     time.sleep(2)
     print("a. The sender sends a photon through a polarizer with randomly assigned polarizations and bit assignment.")
     time.sleep(1)
@@ -255,10 +264,10 @@ def q2lvl4(qkd, life):
     if q1ans == "d":
         print("Correct!")
     else:
-        print("Wrong! You lose a life but you must keep moving...")
-        return life - 1
+        print("Wrong! You lose!")
+        return life - 3
     time.sleep(2)
-    print("You enter the castle, and brace yourself for one final challenge")
+    print
     time.sleep(1)
     print('...')
     os.system('cls' if os.name == 'nt' else 'clear')  
