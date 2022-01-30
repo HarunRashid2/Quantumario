@@ -1,5 +1,5 @@
 def q1lvl1(qkd, life):
-    print("A wild duck appears! It speaks with a deep voice: If you wish to pass and go to your princess, you need to answer the eight Guardian Ducks' questions, Quantumario!")
+    print("Suddenly, a wild duck appears! It speaks with a deep voice: If you wish to pass and go to your princess, you need to answer the eight Guardian Ducks' questions, Quantumario!")
     time.sleep(3)
     print("Here is the first one: What does the no cloning theorem entail?!")
     time.sleep(2)
