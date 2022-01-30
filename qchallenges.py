@@ -1,7 +1,7 @@
 def q1lvl1(qkd, life):
-    print("A wild duck appears! It speaks with a deep voice: If you wish to pass and go to your princess, you need to answer the ducks questions, Quantumario!")
+    print("A wild duck appears! It speaks with a deep voice: If you wish to pass and go to your princess, you need to answer the six Guardian Ducks' questions, Quantumario!")
     time.sleep(3)
-    print("What does the no cloning theorem entail?!")
+    print("Here is the first one: What does the no cloning theorem entail?!")
     time.sleep(2)
     print("a. It is impossible to create identical copies of an arbitrary unknown quantum state")
     time.sleep(1)
@@ -16,11 +16,13 @@ def q1lvl1(qkd, life):
     if qkd == True: #if you get the hint
         print("The princess says: 'It's in the name, duh!'")
     elif qkd == False: 
-        print("The princess says: 'Cloning? sounds like you should be able to create clones'") #bowser hint
+        print("The princess says: 'Cloning? Sounds like you should be able to create clones'") #bowser hint
     time.sleep(2)
     q1ans=input("What is your answer?")
     if q1ans == "a":
-        print("You continue.")
+        print("Correct! You continue.")
+        time.sleep(2)
+        print("The path here is nice. Trees surround you, and the sun shines.")
     else:
         print("Wrong! You lose a life but you must keep moving...")
         return life - 1
@@ -30,7 +32,7 @@ def q1lvl1(qkd, life):
 
 def q2lvl1(qkd, life):
     time.sleep(4)
-    print("A beautiful creature descends from the skies, flapping its wings. The duck speaks shrilly: Which one of these isn't a real QKD protocol?")
+    print("The sun is suddenly blocked. A beautiful creature descends from the skies, flapping its wings. The duck speaks shrilly: Which one of these isn't a real QKD protocol?")
     time.sleep(1)
     print("a. BB84")
     time.sleep(1)
@@ -47,7 +49,9 @@ def q2lvl1(qkd, life):
     time.sleep(2)
     q1ans=input("What is your answer?")
     if q1ans == "b":
-        print("You continue")
+        print("Correct! The duck gives way, and you continue.")
+        time.sleep(2)
+        print("The trees start to clear, hills take their place.")
     else:
         print("Wrong! You lose a life but you must keep moving...")
         return life - 1
@@ -74,7 +78,9 @@ def q1lvl2(qkd, life):
     time.sleep(2)
     q1ans=input("What is your answer?")
     if q1ans == "c":
-        print("You continue")
+        print("Correct! The huge duck takes flight, leaving way for you. You continue")
+        time.sleep(2)
+        print("
     else:
         print("Wrong! You lose a life")
         return life - 1
