@@ -1,3 +1,31 @@
+import os
+import time
+
+!pip install qiskit
+
+from qiskit import BasicAer, execute
+from qiskit.circuit import QuantumRegister, ClassicalRegister, QuantumCircuit
+
+# from quantuminspire.credentials import get_authentication
+# from quantuminspire.qiskit import QI
+
+# QI_URL = os.getenv('42ca57206e553107fd2180b65ab21c3764c70e5a', 'https://api.quantum-inspire.com/')
+
+
+# authentication = get_authentication()
+# QI.set_authentication(authentication, QI_URL)
+# qi_backend = QI.get_backend('Spin-2')
+
+!pip install quantuminspire
+from quantuminspire.credentials import get_authentication
+from quantuminspire.qiskit import QI
+QI_URL = os.getenv('42ca57206e553107fd2180b65ab21c3764c70e5a', 'https://api.quantum-inspire.com/')
+
+
+authentication = get_authentication()
+QI.set_authentication(authentication, QI_URL)
+qi_backend = QI.get_backend('Spin-2')
+
 
 # Creating Alice's Bits and Bases
 global qkd
