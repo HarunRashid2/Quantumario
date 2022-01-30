@@ -20,7 +20,7 @@ def q1lvl1(qkd, life):
     time.sleep(2)
     q1ans=input("What is your answer?")
     if q1ans == "a":
-        print("You continue")
+        print("You continue.")
     else:
         print("Wrong! You lose a life but you must keep moving...")
         return life - 1
