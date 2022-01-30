@@ -1,16 +1,16 @@
 # Quantumario
 An adventure through the world of Quantumario.
 
-Team: QCB
+# Team
 Jaime Park, Harun Gürhan, Shravika Pendyala, Sujan Khadka
 
-Abstract
+# Abstract
 
 
-How to play the game
+# How to play the game
 
 
-Details About the Implementation
+# Details About the Implementation
 
 
-Date
+# Date
